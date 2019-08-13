@@ -1,28 +1,6 @@
 {
-  "name": "@graffiti/api",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "aruntk",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/jest": "^24.0.6",
-    "@types/supertest": "^2.0.7",
-    "chai": "^4.2.0",
-    "jest": "^24.1.0",
-    "supertest": "^3.4.2",
-    "ts-jest": "^24.0.0",
-    "ts-loader": "^5.3.3",
-    "ts-node": "^8.0.2",
-    "tsc-watch": "^2.1.2",
-    "tslint": "^5.12.1",
-    "tslint-config-airbnb": "^5.11.0",
-    "tslint-immutable": "^5.2.0",
-    "typescript": "^3.3.3"
-  }
+  "name": "demo-api",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "license": "MIT"
 }
