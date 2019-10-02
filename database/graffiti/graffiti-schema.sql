@@ -21,28 +21,6 @@ CREATE SCHEMA IF NOT EXISTS `graffiti` DEFAULT CHARACTER SET utf8mb4 COLLATE utf
 USE `graffiti` ;
 
 -- -----------------------------------------------------
--- Table `graffiti`.`_Migration`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graffiti`.`_Migration` (
-  `revision` INT(11) NOT NULL AUTO_INCREMENT,
-  `name` TEXT NOT NULL,
-  `datamodel` LONGTEXT NOT NULL,
-  `status` TEXT NOT NULL,
-  `applied` INT(11) NOT NULL,
-  `rolled_back` INT(11) NOT NULL,
-  `datamodel_steps` LONGTEXT NOT NULL,
-  `database_migration` LONGTEXT NOT NULL,
-  `errors` LONGTEXT NOT NULL,
-  `started_at` DATETIME(3) NOT NULL,
-  `finished_at` DATETIME(3) NULL DEFAULT NULL,
-  PRIMARY KEY (`revision`))
-ENGINE = InnoDB
-AUTO_INCREMENT = 2
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_unicode_ci;
-
-
--- -----------------------------------------------------
 -- Table `graffiti`.`app`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `graffiti`.`app` (
@@ -324,19 +302,6 @@ CREATE TABLE IF NOT EXISTS `graffiti`.`dashboard_filter` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_unicode_ci;
-
-
--- -----------------------------------------------------
--- Table `graffiti`.`test`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `graffiti`.`test` (
-  `test` INT(11) NOT NULL,
-  `test2` VARCHAR(5) NULL DEFAULT NULL,
-  PRIMARY KEY (`test`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_unicode_ci;
-
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
